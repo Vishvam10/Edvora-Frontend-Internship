@@ -42,7 +42,6 @@ const PastRides = (props) => {
 
     return (
         <>
-            <h1>PAST RIDES</h1>
             <ul>
                 {listItems}
             </ul>

@@ -43,7 +43,6 @@ const UpcomingRides = (props) => {
 
     return (
         <>
-            <h1>UPCOMING RIDES</h1>
             <ul>
                 {listItems}
             </ul>

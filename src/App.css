@@ -65,6 +65,13 @@ select {
     margin: 0.5rem 0rem 0.5rem 0rem;
 }
 
+.active {
+    color: white;
+    font-weight: bold;
+    border-bottom: 2px solid white;
+    padding-bottom: 3px;
+}
+
 .App {
     text-align: center;
 }

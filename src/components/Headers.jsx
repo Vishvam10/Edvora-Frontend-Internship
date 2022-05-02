@@ -1,6 +1,5 @@
 const Header = (props) => {
     let img_url = "", name = ""
-    console.log(props.data);
     if(props.data) {
         img_url = props.data.img_url
         name = props.data.name

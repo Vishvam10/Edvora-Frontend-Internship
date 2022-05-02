@@ -4,7 +4,8 @@ import {
   BrowserRouter as Router,
   Routes ,
   Route,
-  Link
+  Link,
+  NavLink
 } from "react-router-dom";
 
 import './App.css';
@@ -76,13 +77,13 @@ function App() {
             <div className="menu">
               <ul className="rides_menu">
                   <li>
-                      <Link to="/nearest-rides" style={{color: "white"}}>Nearest Rides</Link>
+                      <NavLink to="/nearest-rides" style={{color: "white"}}>Nearest Rides</NavLink>
                   </li>
                   <li>
-                      <Link to="/upcoming-rides" style={{color: "white"}}>Upcoming Rides</Link>
+                      <NavLink to="/upcoming-rides" style={{color: "white"}}>Upcoming Rides</NavLink>
                   </li>
                   <li>
-                      <Link to="/past-rides" style={{color: "white"}}>Past Rides</Link>
+                      <NavLink to="/past-rides" style={{color: "white"}}>Past Rides</NavLink>
                   </li>
               </ul>
               <div>

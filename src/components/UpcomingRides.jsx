@@ -4,6 +4,8 @@ import Card from "./Card";
 const UpcomingRides = (props) => {
     const currentDate = new Date()
     const [upcomingRides, setUpcomingRides] = useState([])
+    let filteredResults;
+
 
     useEffect(() => {
         if(props.data) {
@@ -20,7 +22,20 @@ const UpcomingRides = (props) => {
         });
     }
 
-    const listItems = upcomingRides.map((ele) => 
+    filteredResults = upcomingRides;
+    if(props.sFilter && props.sFilter != "State" && filteredResults != []) {
+        filteredResults =  upcomingRides.filter((ele) => {
+            return ele.state == props.sFilter
+        })
+    }
+    if(props.cFilter && props.cFilter != "City" && filteredResults != []) {
+        filteredResults =  filteredResults.filter((ele) => {
+            return ele.city == props.cFilter
+        })
+        
+    }
+
+    const listItems = filteredResults.map((ele) => 
         <li>
             <Card />
         </li>

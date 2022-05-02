@@ -1,38 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+html {
+    font-size: 63.5%;
+}
+
+body {
+    overflow-x: hidden;
+    font-smooth: always;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #CFCFCF;
+}
+
+a {
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.6rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    background: #101010;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 3rem 1rem 1rem;
+    height: 4rem;
+    margin: 1rem 1rem 1rem -6rem;
+    position: absolute;
+    top: -1rem
+}
+
+ul {
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.6rem;
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+    margin: 0rem 1rem 0rem 1rem;
+}
+
+p {
+    text-align: left;
+    margin: 1rem 0rem 0rem 0rem;
+}
+
+select {
+    width: 16rem;
+    height: 4rem;
+    background: #232323;
+    border-radius: 1rem;
+    padding: 1rem;
+    color: white;
+    border: none;
+    margin: 0.5rem 0rem 0.5rem 0rem;
+}
+
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.background {
+    width: 100%;
+    height: auto;
+    background-color: #292929;
+    padding: 12rem 4rem 1rem 4rem;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 88.4%;
+    background: red;
+    margin: 0rem 0rem 1rem 9.5rem;
+}
+
+.user_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.user_profile_photo {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 4rem;
+    margin: 0rem 0rem 0rem 4rem;
+}
+
+.filter_options {
+    width: 21rem;
+    height: 19rem;
+    background: #131313;
+    border-radius: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    left: 78%;
+}
+
+.filter_title {
+    text-align: left;
+    font-weight: 400;
+    margin: 0rem 0rem 1rem 2.8rem;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: -4rem 0rem 0rem -1rem;
+    width: 92%;
+}
+
+.rides_menu {
+    display: flex;
+}
+
+.sep_line {
+    position: relative;
+    width: 16rem;
+    height: 0px;
+    border: 1px solid #CBCBCB;
+    left: 2.7rem;
+    margin: 0rem 0rem 2rem 0rem;
+}
+
+.station_card {
+    width: 92%;
+    margin: 2rem 0rem 0rem -1.2rem;
+    height: 18rem;
+    background: #171717;
+    border-radius: 1rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 42rem 46.4rem auto;
+}
+
+.station_info {
+    grid-column: 2/3;
+    margin: 0.4rem 0rem 0rem 0rem;
+}
+
+.station_image {
+    grid-column: 1/2;
+    width: 29.6rem;
+    height: 14.8rem;
+    border-radius: 0.5rem;
+    margin: 1.6rem 0rem 0rem 1rem;
+}
+
+.station_city_and_state {
+    grid-column: 3/3;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 32rem;
+    height: 2rem;
+    position: relative;
+    top: 2rem;
+    right: -13rem;
+}
+
+.city_state_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    margin: 0rem 2rem 0rem 0rem;
+    background: rgba(0, 0, 0, 0.56);
+    border-radius: 4.6rem;
+    word-wrap: break-word;
+    padding: 0.8rem;
+    height: 0.8rem;
+    font-size: 1.2rem;
+}
+
+.station_info_highlight {
+    color: white;
 }

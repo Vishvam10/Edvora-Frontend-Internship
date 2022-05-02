@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 
 import './App.css';
+import filterLogo from './assets/filter.png'
 
 import Header from './components/Headers';
 
@@ -51,6 +52,7 @@ function App() {
       data: stationData,
     }
     header_props = {
+      name: userData.name,
       img_url: userData.url
     }
   }
@@ -70,7 +72,7 @@ function App() {
       <Header data={header_props} />
       <div>
         <Router>
-          <div style={{margin: "0rem 0rem 0rem 2rem"}}>
+          <div style={{margin: "2rem 0rem 0rem 2rem"}}>
             <div className="menu">
               <ul className="rides_menu">
                   <li>
@@ -83,7 +85,10 @@ function App() {
                       <Link to="/past-rides" style={{color: "white"}}>Past Rides</Link>
                   </li>
               </ul>
-              <span style={{color: "white", fontSize: "1.6rem"}} onClick={toggleFilters}>Filters</span>
+              <div>
+                <img src={filterLogo} alt="filterLogo" style={{margin: "0rem 1.6rem 0rem 0rem"}}></img>
+                <span style={{color: "white", fontSize: "1.6rem"}} onClick={toggleFilters}>Filters</span>
+              </div>
             </div>
               <div className='filters_menu'>
                 {showFilters ? <Filters data={stationData} onHandleStateFilter={onHandleStateFilter} onHandleCityFilter={onHandleCityFilter} /> : ""}

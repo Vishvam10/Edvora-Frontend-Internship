@@ -31,7 +31,7 @@ nav {
     align-items: center;
     width: 100%;
     padding: 1rem 3rem 1rem 1rem;
-    height: 4rem;
+    height: 6rem;
     margin: 1rem 1rem 1rem -6rem;
     position: absolute;
     top: -1rem
@@ -117,7 +117,6 @@ select {
     justify-content: space-between;
     align-items: center;
     width: 88.4%;
-    background: red;
     margin: 0rem 0rem 1rem 9.5rem;
 }
 
@@ -209,7 +208,7 @@ select {
     height: 2rem;
     position: relative;
     top: 2rem;
-    right: -13rem;
+    right: -9rem;
 }
 
 .city_state_wrapper {
@@ -218,7 +217,7 @@ select {
     justify-content: center;
     align-items: center;
     width: max-content;
-    margin: 0rem 2rem 0rem 0rem;
+    margin: 0rem 1rem 0rem 0rem;
     background: rgba(0, 0, 0, 0.56);
     border-radius: 4.6rem;
     word-wrap: break-word;
